@@ -34,10 +34,10 @@ Meteor.startup(() => {
 	let players = Players.find().fetch();
 
 	let title = 'Bach Bowl';
-	let subtitle = 'Created by David Carron';
+	let subtitle = 'Test';
 	let jsx = 	(
 		<div>
-			<TitleBar title={title} />
+			<TitleBar title={title} subtitle={subtitle}/>
 			{renderPlayers(players)}
 			<AddPlayer/>
 			
